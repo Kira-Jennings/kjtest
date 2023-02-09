@@ -1,0 +1,25 @@
+featureFlags:
+  flags:
+  - flag:
+      name: Bool1
+      identifier: Bool1
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: E1
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  projectIdentifier: KJ5
+  orgIdentifier: default
