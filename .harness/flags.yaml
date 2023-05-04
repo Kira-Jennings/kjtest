@@ -1,0 +1,97 @@
+featureFlags:
+  flags:
+  - flag:
+      name: Bool1
+      identifier: Bool1
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: Env_1
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: Env_2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Env_Mon_24_April
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: Bool2
+      identifier: Bool2
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: Env_1
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Env_2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: Env_Mon_24_April
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: KJ Flag
+      identifier: KJ_Flag
+      description: Testing flag creation while in All Environments view
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: Env_1
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Env_2
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: Env_Mon_24_April
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: KJ_Test_New
+  orgIdentifier: default
